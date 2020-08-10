@@ -1,6 +1,0 @@
-﻿  SandboxApp.cpp
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Log.h(20,54): warning C4251: GameEngine::Log::s_CoreLogger: class "std::shared_ptr<spdlog::logger>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Log"
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : см. объявление "std::shared_ptr<spdlog::logger>"
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Log.h(21,56): warning C4251: GameEngine::Log::s_ClientLogger: class "std::shared_ptr<spdlog::logger>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Log"
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : см. объявление "std::shared_ptr<spdlog::logger>"
-  Sandbox.vcxproj -> C:\Users\crist\Source\Repos\GameEngine\bin\Debug-x64\Sandbox\Sandbox.exe
