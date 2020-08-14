@@ -2,7 +2,6 @@
 
 #include "Application.h"
 #include "Events/Event.h"
-#include "GameEngine/Events/ApplicationEvent.h"
 
 #include <GLFW/glfw3.h>
 
@@ -17,7 +16,10 @@ namespace GameEngine {
 	Application::~Application() {}
 
 	void Application::OnEvent(Event& e) {
-		GE_CORE_INFO("{0}", e);
+		EventDispatcher dispatcher(e);
+		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
+
+		GE_CORE_TRACE("{0}", e);
 	}
 
 	void Application::Run() {
@@ -29,5 +31,10 @@ namespace GameEngine {
 			glClear(GL_COLOR_BUFFER_BIT);
 			m_Window->OnUpdate();
 		}
+	}
+
+	bool Application::OnWindowClose(WindowCloseEvent& e) {
+		m_Running = false;
+		return true;
 	}
 }

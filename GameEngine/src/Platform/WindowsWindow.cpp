@@ -8,6 +8,10 @@
 namespace GameEngine {
 	static bool s_GLFWInitialized = false;
 
+	static void GLFWErrorCallback(int error, const char* description) {
+		GE_CORE_ERROR("GLFW Error ({0}): {1}", error, description);
+	}
+
 	Window* Window::Create(const WindowProps& props) {
 		return new WindowsWindow(props);
 	}
@@ -30,7 +34,7 @@ namespace GameEngine {
 		if (!s_GLFWInitialized) {
 			int success = glfwInit();
 			GE_CORE_ASSERT(success, "Could not initialize GLFW!");
-
+			glfwSetErrorCallback(GLFWErrorCallback);
 			s_GLFWInitialized = true;
 		}
 
@@ -92,6 +96,20 @@ namespace GameEngine {
 					break;
 				}
 			}
+		});
+
+		glfwSetScrollCallback(m_Window, [](GLFWwindow* window, double xOffset, double yOffset) {
+			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+			MouseScrolledEvent event((float)xOffset, (float)yOffset);
+			data.EventCallback(event);
+		});
+
+		glfwSetCursorPosCallback(m_Window, [](GLFWwindow* window, double xPos, double yPos) {
+			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+			MouseMovedEvent event((float)xPos, (float)yPos);
+			data.EventCallback(event);
 		});
 	}
 
