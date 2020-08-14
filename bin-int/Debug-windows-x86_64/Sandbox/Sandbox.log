@@ -3,4 +3,6 @@ C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Log.h(21,54): w
 C:\Users\crist\Source\Repos\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : см. объявление "std::shared_ptr<spdlog::logger>"
 C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Log.h(22,56): warning C4251: GameEngine::Log::s_ClientLogger: class "std::shared_ptr<spdlog::logger>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Log"
 C:\Users\crist\Source\Repos\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : см. объявление "std::shared_ptr<spdlog::logger>"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(16,35): warning C4251: GameEngine::Application::m_Window: class "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Application"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(16): message : см. объявление "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>"
   Sandbox.vcxproj -> C:\Users\crist\Source\Repos\GameEngine\Sandbox\..\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe
