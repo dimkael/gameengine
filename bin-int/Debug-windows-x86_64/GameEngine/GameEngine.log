@@ -1,5 +1,5 @@
 ﻿cl : командная строка warning D9025: переопределение "/MTd" на "/MDd"
-  Application.cpp
+  ImGuiLayer.cpp
 C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Layer.h(20,26): warning C4251: GameEngine::Layer::m_DebugName: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Layer"
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(4471): message : см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
 C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\LayerStack.h(21,31): warning C4251: GameEngine::LayerStack::m_Layers: class "std::vector<GameEngine::Layer *,std::allocator<GameEngine::Layer *>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::LayerStack"
@@ -14,8 +14,10 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=GameEngine::Layer *
           ]
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(25,35): warning C4251: GameEngine::Application::m_Window: class "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Application"
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(25): message : см. объявление "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>"
-     Создается библиотека ..\bin\Debug-windows-x86_64\GameEngine\GameEngine.lib и объект ..\bin\Debug-windows-x86_64\GameEngine\GameEngine.exp
-LINK : warning LNK4098: библиотека по умолчанию "LIBCMTD" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(29,35): warning C4251: GameEngine::Application::m_Window: class "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Application"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(29): message : см. объявление "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\ImGui\ImGuiLayer.cpp(56,86): warning C4244: аргумент: преобразование "unsigned int" в "float", возможна потеря данных
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\ImGui\ImGuiLayer.cpp(56,57): warning C4244: аргумент: преобразование "unsigned int" в "float", возможна потеря данных
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\ImGui\ImGuiLayer.cpp(144,58): warning C4244: аргумент: преобразование "unsigned int" в "float", возможна потеря данных
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\ImGui\ImGuiLayer.cpp(144,43): warning C4244: аргумент: преобразование "unsigned int" в "float", возможна потеря данных
   GameEngine.vcxproj -> C:\Users\crist\Source\Repos\GameEngine\GameEngine\..\bin\Debug-windows-x86_64\GameEngine\GameEngine.dll

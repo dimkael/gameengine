@@ -18,6 +18,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=GameEngine::Layer *
           ]
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(25,35): warning C4251: GameEngine::Application::m_Window: class "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Application"
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(25): message : см. объявление "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(29,35): warning C4251: GameEngine::Application::m_Window: class "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Application"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(29): message : см. объявление "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>"
   Sandbox.vcxproj -> C:\Users\crist\Source\Repos\GameEngine\Sandbox\..\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe
