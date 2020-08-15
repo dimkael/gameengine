@@ -1,7 +1,46 @@
-﻿  Application.cpp
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(20,35): warning C4251: GameEngine::Application::m_Window: class "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Application"
-C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(20): message : см. объявление "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>"
+﻿cl : командная строка warning D9025: переопределение "/MTd" на "/MDd"
+  gepch.cpp
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Log.h(21,54): warning C4251: GameEngine::Log::s_CoreLogger: class "std::shared_ptr<spdlog::logger>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Log"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : см. объявление "std::shared_ptr<spdlog::logger>"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Log.h(22,56): warning C4251: GameEngine::Log::s_ClientLogger: class "std::shared_ptr<spdlog::logger>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Log"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : см. объявление "std::shared_ptr<spdlog::logger>"
+cl : командная строка warning D9025: переопределение "/MTd" на "/MDd"
+  Application.cpp
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Layer.h(20,26): warning C4251: GameEngine::Layer::m_DebugName: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Layer"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(4471): message : см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\LayerStack.h(21,31): warning C4251: GameEngine::LayerStack::m_Layers: class "std::vector<GameEngine::Layer *,std::allocator<GameEngine::Layer *>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::LayerStack"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\LayerStack.h(17): message : см. объявление "std::vector<GameEngine::Layer *,std::allocator<GameEngine::Layer *>>"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\LayerStack.h(22,46): warning C4251: GameEngine::LayerStack::m_LayerInsert: class "std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::LayerStack"
+          with
+          [
+              _Ty=GameEngine::Layer *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vector(439): message : см. объявление "std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>"
+          with
+          [
+              _Ty=GameEngine::Layer *
+          ]
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(25,35): warning C4251: GameEngine::Application::m_Window: class "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Application"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Application.h(25): message : см. объявление "std::unique_ptr<GameEngine::Window,std::default_delete<GameEngine::Window>>"
+  Layer.cpp
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Layer.h(20,26): warning C4251: GameEngine::Layer::m_DebugName: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Layer"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(4471): message : см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  LayerStack.cpp
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\Layer.h(20,26): warning C4251: GameEngine::Layer::m_DebugName: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::Layer"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(4471): message : см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\LayerStack.h(21,31): warning C4251: GameEngine::LayerStack::m_Layers: class "std::vector<GameEngine::Layer *,std::allocator<GameEngine::Layer *>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::LayerStack"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\LayerStack.h(17): message : см. объявление "std::vector<GameEngine::Layer *,std::allocator<GameEngine::Layer *>>"
+C:\Users\crist\Source\Repos\GameEngine\GameEngine\src\GameEngine\LayerStack.h(22,46): warning C4251: GameEngine::LayerStack::m_LayerInsert: class "std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>" должен иметь dll-интерфейс для использования клиентами class "GameEngine::LayerStack"
+          with
+          [
+              _Ty=GameEngine::Layer *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vector(439): message : см. объявление "std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>"
+          with
+          [
+              _Ty=GameEngine::Layer *
+          ]
+  Log.cpp
   WindowsWindow.cpp
   Создание кода...
-     Создается библиотека ..\bin\Debug-windows-x86_64\GameEngine\GameEngine.lib и объект ..\bin\Debug-windows-x86_64\GameEngine\GameEngine.exp
   GameEngine.vcxproj -> C:\Users\crist\Source\Repos\GameEngine\GameEngine\..\bin\Debug-windows-x86_64\GameEngine\GameEngine.dll

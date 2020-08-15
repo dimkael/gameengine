@@ -60,16 +60,19 @@ project "GameEngine"
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
-	filter "configurations:Release"
-		defines "GE_RELEASE"
-		optimize "On"
-
 	filter "configurations:Debug"
 		defines "GE_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
+
+	filter "configurations:Release"
+		defines "GE_RELEASE"
+		buildoptions "/MD"
+		optimize "On"
 
 	filter "configurations:Dist"
 		defines "GE_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -107,14 +110,17 @@ project "Sandbox"
 			"GE_PLATFORM_WINDOWS"
 		}
 
-	filter "configurations:Release"
-		defines "GE_RELEASE"
-		optimize "On"
-
 	filter "configurations:Debug"
 		defines "GE_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
+
+	filter "configurations:Release"
+		defines "GE_RELEASE"
+		buildoptions "/MD"
+		optimize "On"
 
 	filter "configurations:Dist"
 		defines "GE_DIST"
+		buildoptions "/MDd"
 		optimize "On"
